@@ -54,7 +54,7 @@ public class PrefixCommand implements CommandExecutor {
                             return true;
                         }
 
-                        if (Bukkit.getPlayer(args[1]) == null || !Bukkit.getPlayer(args[1]).isOnline()) {
+                        if (Bukkit.getPlayer(args[1]) == null) {
                             player.sendMessage(CC.translate("&cYou must provide a valid player."));
                             return true;
                         }
@@ -66,7 +66,7 @@ public class PrefixCommand implements CommandExecutor {
                         return true;
                     }
 
-                    if (Bukkit.getPlayer(args[1]) == null || !Bukkit.getPlayer(args[1]).isOnline()) {
+                    if (Bukkit.getPlayer(args[1]) == null) {
                         player.sendMessage(CC.translate("&cYou must provide a valid player."));
                         return true;
                     }
